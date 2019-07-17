@@ -1,0 +1,302 @@
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada');
+
+/* ---- base ---- */
+
+.contact_wrapper {
+    position: absolute;
+    text-align: center;
+    width: 960px;
+    height: 1300px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    margin-top: 200px;
+    /*background-color: rgba(34, 34, 34, 0.1);*/
+    background-color: rgba(192, 215, 207, 0.1);
+    border-radius: 10px;
+}
+
+.background {
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 0px;
+    /*background-image: url("dot.gif");
+    background-color: rgba(240, 17, 17, 0.1);*/
+    width: 960px;
+    height: 250px;
+}
+
+.contact_wrapper .p {
+    text-align: center;
+    width: 840px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    line-height: 180%;
+    letter-spacing: 1.1px;
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 18px;
+}
+
+.contact_wrapper .h1 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 32px;
+    margin-top: 260px;
+    /*margin-bottom: 20px;*/
+    font-size: 38px;
+    color: rgba(0, 0, 0, 0.67);
+}
+
+.profolio {
+    padding-top: 0px;
+}
+
+
+/*---social icon nav---/
+/*styles for nav*/
+
+.icon-nav {
+    /*as header is position relative it will be positioned absolutely inside header*/
+    text-align: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    max-width: 720px;
+    height: 10px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 980px;
+    display: block;
+}
+
+.icon-nav .icon-ul {
+    list-style: none;
+    margin: 0px;
+    padding: 00px;
+    font-size: auto;
+}
+
+.icon-nav .icon-ul .icon-li {
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+}
+
+.icon-nav .icon-ul .icon-li img {
+    height: 100px;
+}
+
+
+/*--social icons--*/
+
+.icon-link {
+    width: 60px;
+    height: 60px;
+    background-color: #666;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    margin: 5px;
+    box-sizing: content-box;
+}
+
+.icon-link.fill.facebook {
+    background-color: #3b5998;
+}
+
+.icon-link.fill.facebook:hover {
+    background-color: #fff;
+}
+
+.icon-link.fill.facebook:hover .fa-facebook {
+    color: #3b5998;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+.icon-link.fill.tumblr {
+    background-color: #32506d;
+}
+
+.icon-link.fill.tumblr:hover {
+    background-color: #fff;
+}
+
+.icon-link.fill.tumblr:hover .fa-tumblr {
+    color: #32506d;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+.icon-link.fill.linkedin {
+    background-color: #007bb6;
+}
+
+.icon-link.fill.linkedin:hover {
+    background-color: #fff;
+}
+
+.icon-link.fill.linkedin:hover .fa-linkedin {
+    color: #007bb6;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+.icon-link.fill.twitter {
+    background-color: #00aced;
+}
+
+.icon-link.fill.twitter:hover {
+    background-color: #fff;
+}
+
+.icon-link.fill.twitter:hover .fa-twitter {
+    color: #00aced;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+.icon-link.fill.github {
+    background-color: #444;
+}
+
+.icon-link.fill.github:hover {
+    background-color: #fff;
+}
+
+.icon-link.fill.github:hover .fa-github {
+    color: #444;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+.icon-link.fill.envelope {
+    background-color: #333;
+}
+
+.icon-link.fill.envelope:hover {
+    background-color: #fff;
+}
+
+.icon-link.fill.envelope:hover .fa-envelope {
+    color: #333;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+.icon-link.brand {
+    background-color: #fff;
+}
+
+.icon-link.brand .fa {
+    color: #006FC2;
+}
+
+.icon-link.round {
+    border-radius: 50%;
+}
+
+.icon-link.round-corner {
+    border-radius: 5px;
+}
+
+.icon-link:hover {
+    -webkit-transition: background-color 150ms ease-in-out;
+    transition: background-color 150ms ease-in-out;
+    height: 56px;
+    line-height: 56px;
+    width: 56px;
+    background-color: #fff;
+}
+
+.icon-link:hover.facebook {
+    border: 2px solid #3b5998;
+}
+
+.icon-link:hover.tumblr {
+    border: 2px solid #32506d;
+}
+
+.icon-link:hover.linkedin {
+    border: 2px solid #007bb6;
+}
+
+.icon-link:hover.twitter {
+    border: 2px solid #00aced;
+}
+
+.icon-link:hover.github {
+    border: 2px solid #444;
+}
+
+.icon-link:hover.envelope {
+    border: 2px solid #333;
+}
+
+.icon-link:hover .fa {
+    line-height: 56px;
+}
+
+.icon-link:hover .fa-facebook {
+    color: #3b5998;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+.icon-link:hover .fa-tumblr {
+    color: #32506d;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+.icon-link:hover .fa-linkedin {
+    color: #007bb6;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+.icon-link:hover .fa-twitter {
+    color: #00aced;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+.icon-link:hover .fa-github {
+    color: #444;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+.icon-link:hover .fa-envelope {
+    color: #333;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+.icon-link .fa {
+    color: #fff;
+    line-height: 60px;
+    font-size: 36px;
+}
+
+.brand-icons {
+    background-color: #ddd;
+    padding: 10px 0;
+}
+
+.tri_background {
+    border-radius: 10px;
+    float: left;
+    margin-top: -200px;
+}
