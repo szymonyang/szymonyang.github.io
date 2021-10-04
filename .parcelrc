@@ -1,7 +1,7 @@
 {
   "extends": "@parcel/config-default",
   "transformers": {
-    "public/image/*.svg": [
+    "public/svg/*.svg": [
       "...",
       "@parcel/transformer-svg-react"
     ]
