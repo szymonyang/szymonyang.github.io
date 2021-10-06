@@ -14,29 +14,37 @@
 }
 
 .intro-inner-container-flex {
-  margin-top: 1em;
+  margin-top: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
 }
+
+#wig {
+  animation: slurp 1s steps(2, start) infinite;
+}
+
+@keyframes slurp {
+  to {
+    opacity: 0;
+  }
+}
+
 /* 
 .intro-text > h1 {
   font-family: "Overlock", cursive;
   font-style: italic;
-  /* font-weight: 600; */
   font-size: 2.5em;
   color: rgba(44, 51, 49, 0.8);
-  /* letter-spacing: 0.1em; */
+  letter-spacing: 0.1em; 
 } */
 
-.intro-divider {
-  margin: 2em 0em 2em 0em;
-}
-
-.intro-electro {
-  margin: 4em 0 4em 0;
+.electro-mobile {
+  max-width: 500px;
+  width: 100%;
+  /* https://stackoverflow.com/questions/43705866/max-width-not-working-on-flex-item */
 }
 
 span.emoji {

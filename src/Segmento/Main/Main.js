@@ -1,11 +1,18 @@
 import React from "react";
-import { Grid, Container } from "semantic-ui-react";
+import { Grid, Segment } from "semantic-ui-react";
 
 import Cummie from "../../../public/svg/cummie.svg";
 import Smack from "../../../public/svg/smack.svg";
 import "./main.css";
 
+// 3d button: https://codepen.io/kathykato/pen/gOOjgmP
+// 3d computer
+
 const Main = () => {
+  const clickButton = () => {
+    window.open("https://wchck.herokuapp.com/");
+  };
+
   return (
     <Grid container stackable verticalAlign="middle">
       <Grid.Row>
@@ -29,7 +36,10 @@ const Main = () => {
             I build it with React, Node, and Socket.IO, with some extra "spice",
             such as Hooks, Context, and SSR.
           </p>
-          <button className="learn-more">More about WeCheck</button>
+
+          <button className="learn-more" onClick={clickButton}>
+            More about WeCheck
+          </button>
         </Grid.Column>
         <Grid.Column width={8}>
           <div id="bussy">
@@ -46,7 +56,7 @@ const Main = () => {
 
       <Grid.Row>
         <Grid.Column width={8}>
-          <div id="smack">
+          <div id="smack-it">
             <Smack />
           </div>
         </Grid.Column>
@@ -63,16 +73,53 @@ const Main = () => {
         </Grid.Column>
       </Grid.Row>
 
-      <Grid.Row>
+      <Grid.Row id="contacto">
         <Grid.Column>
-          <Container text textAlign="center">
+          <Segment textAlign="center" className="contacto-seg">
             <h1>Any question? Let's have a chat!</h1>
             <p style={{ textAlign: "left" }}>
-              You could find me via Email / LinkedIn. Or we could have a coffee
-              chat! I like iced long black with ice cream on top (That's a lotta
-              calories).
+              Please feel free to contact me via{" "}
+              <a
+                href="mailto:xenfa292k@relay.firefox.com"
+                className="slurp"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Email
+              </a>{" "}
+              /{" "}
+              <a
+                href="https://www.linkedin.com/in/jianwenyeung/"
+                className="slurp"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
             </p>
-          </Container>
+            <p style={{ textAlign: "left" }}>
+              Alternatively, please find my{" "}
+              <a
+                href="https://raw.githubusercontent.com/szymonyang/szymonyang.github.io/e554325c86cde6a54e875a64276a0085e83bb8e5/demo/Resume_Simon_Yang.pdf"
+                className="slurp"
+                target="_blank"
+                rel="noreferrer"
+              >
+                resume
+              </a>
+              .
+            </p>
+            <p style={{ textAlign: "left" }}>
+              Or we could have a coffee chat! I like iced long black with ice
+              cream on top (That's a lotta calories). Anyway, thanks for
+              stopping by{" "}
+              <span
+                className="emoji monkey"
+                role="img"
+                aria-label="monkey"
+              ></span>
+            </p>
+          </Segment>
         </Grid.Column>
       </Grid.Row>
     </Grid>

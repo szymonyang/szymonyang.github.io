@@ -43,19 +43,41 @@ export default class DesktopHeader extends Component {
                 <Bar />
               </Menu.Item>
               <Menu.Menu position="right">
-                <Menu.Item className="onRight" as="a">
+                <Menu.Item
+                  className="onRight"
+                  as="a"
+                  href="mailto:xenfa292k@relay.firefox.com"
+                >
                   <Icon name="mail" />
                   Email
                 </Menu.Item>
-                <Menu.Item className="onRight" as="a">
+                <Menu.Item
+                  className="onRight"
+                  as="a"
+                  href="https://github.com/szymonyang"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Icon name="github" />
                   GitHub
                 </Menu.Item>
-                <Menu.Item className="onRight" as="a">
+                <Menu.Item
+                  className="onRight"
+                  as="a"
+                  href="https://linkedin.com/in/jianwenyeung/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Icon name="linkedin" />
                   LinkedIn
                 </Menu.Item>
-                <Menu.Item className="onRight" as="a">
+                <Menu.Item
+                  className="onRight"
+                  as="a"
+                  href="https://dribbble.com/szymonyang"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Icon name="dribbble" />
                   Dribbble
                 </Menu.Item>

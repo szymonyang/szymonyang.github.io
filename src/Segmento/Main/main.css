@@ -1,9 +1,13 @@
 #bussy {
   text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
-#smack {
+#smack-it {
   text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 #naut-found {
@@ -36,6 +40,23 @@
 
 .row#power-button-grid {
   margin: 0 0 8.47em 0;
+}
+
+.ui.stackable.grid:not(.vertically) > .row {
+  margin: 1.33em 0 1.33em 0;
+}
+.ui.grid > .row {
+  margin: 2em 0 2em 0;
+}
+
+.row#contacto {
+  margin-bottom: 5em;
+}
+
+.ui.segment.contacto-seg {
+  border: none;
+  box-shadow: none;
+  background: none;
 }
 
 /* big button css */
@@ -82,4 +103,22 @@ button.learn-more:active {
 button.learn-more:active::before {
   box-shadow: 0 0 0 2px #85a9b1, 0 0 0 0 #becad0;
   transform: translate3d(0, 0, -1em);
+}
+
+/* emoji */
+.monkey::after {
+  content: "🙈";
+  --emoji-1: "🙉";
+  --emoji-2: "🙊";
+  animation: threeFrames 2s linear infinite;
+}
+
+@keyframes threeFrames {
+  33.333% {
+    content: var(--emoji-1);
+  }
+
+  66.666% {
+    content: var(--emoji-2);
+  }
 }

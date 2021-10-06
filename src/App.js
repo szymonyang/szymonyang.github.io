@@ -1,30 +1,30 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "semantic-ui-css/semantic.min.css";
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Particle from "./Component/Particle/Particle";
-
 import HeaderContainer from "./Header/HeaderContainer/HeaderContainer";
 import Home from "./Page/Home/Home";
-
-import {
-  Header,
-  Button,
-  Container,
-  Grid,
-  Segment,
-  Image,
-  Icon,
-} from "semantic-ui-react";
+import Error from "./Page/Error/Error";
 
 import "./app.css";
 
 const App = () => {
   return (
     <React.StrictMode>
-      <Particle />
-      <HeaderContainer />
-      <Home />
+      <Router>
+        <Particle />
+
+        <HeaderContainer />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="*">
+            <Error />
+          </Route>
+        </Switch>
+      </Router>
     </React.StrictMode>
   );
 };

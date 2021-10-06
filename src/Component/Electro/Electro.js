@@ -4,25 +4,6 @@ import "./electro.css";
 
 // inspired by https://codepen.io/sean_codes/pen/VbWdRd
 
-// const Electro = () => {
-//   return (
-//     <div className="electro-container">
-//       <div className="top">
-//         <div className="title">
-//           Come and See My Work. Something behind the Coding
-//         </div>
-//       </div>
-//       <div className="view">
-//         <div className="code"></div>
-//         <div className="example"></div>
-//         <div className="handle">
-//           <div className="tracker"></div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
 export default class Electro extends Component {
   state = { left: 250, width: 250, display: "none" };
   containerRef = React.createRef();
@@ -56,7 +37,7 @@ export default class Electro extends Component {
       <div className="electro-container" ref={this.containerRef}>
         <div className="top">
           <div className="title">
-            Come and See My Work. Something behind the Coding
+            Slide the window to see some of my professional experience
           </div>
         </div>
         <div className="view">

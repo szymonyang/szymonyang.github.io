@@ -6,6 +6,7 @@
   margin: 0 auto;
   margin-top: 320px; */
   /* z-index: 1; */
+  /* display: inline-block; */
   width: 500px;
   background: #fff;
   box-shadow: 0.2em 0.2em 1em rgba(26, 49, 41, 0.3);
@@ -28,7 +29,7 @@
 }
 
 .top .title {
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   width: 100%;
   /* font-family: "Raleway", sans-serif; */
 }

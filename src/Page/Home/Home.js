@@ -3,7 +3,7 @@ import { Container, Segment } from "semantic-ui-react";
 
 import Intro from "../../Segmento/Intro/Intro";
 import Main from "../../Segmento/Main/Main";
-import Contacto from "../../Segmento/Contacto/Contacto";
+
 import "./home.css";
 
 const Home = () => {
