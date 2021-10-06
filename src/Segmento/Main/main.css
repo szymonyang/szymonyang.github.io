@@ -1,0 +1,124 @@
+#bussy {
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+#smack-it {
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+#naut-found {
+  animation: blinker 2s linear infinite;
+}
+
+#top {
+  animation: smacking 0.44s steps(5, start) infinite;
+}
+
+#verse {
+  animation: smacking 2s steps(5, start) infinite;
+}
+
+#bottom {
+  animation: smacking 1.3s steps(5, start) infinite;
+}
+
+@keyframes smacking {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.row#power-button-grid {
+  margin: 0 0 8.47em 0;
+}
+
+.ui.stackable.grid:not(.vertically) > .row {
+  margin: 1.33em 0 1.33em 0;
+}
+.ui.grid > .row {
+  margin: 2em 0 2em 0;
+}
+
+.row#contacto {
+  margin-bottom: 5em;
+}
+
+.ui.segment.contacto-seg {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+/* big button css */
+button.learn-more {
+  font-weight: 600;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 0.5em 0.8em;
+  background: #f0fcff;
+  border: 2px solid #85a9b1;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+button.learn-more::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #c4f6f9;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #85a9b1, 0 0.625em 0 0 #becad0;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+button.learn-more:hover {
+  background: #e9feff;
+  transform: translate(0, 0.25em);
+}
+button.learn-more:hover::before {
+  box-shadow: 0 0 0 2px #85a9b1, 0 0.625em 0 0 #becad0;
+  transform: translate3d(0, 0.5em, -1em);
+}
+button.learn-more:active {
+  background: #e9feff;
+  transform: translate(0em, 0.75em);
+}
+button.learn-more:active::before {
+  box-shadow: 0 0 0 2px #85a9b1, 0 0 0 0 #becad0;
+  transform: translate3d(0, 0, -1em);
+}
+
+/* emoji */
+.monkey::after {
+  content: "🙈";
+  --emoji-1: "🙉";
+  --emoji-2: "🙊";
+  animation: threeFrames 2s linear infinite;
+}
+
+@keyframes threeFrames {
+  33.333% {
+    content: var(--emoji-1);
+  }
+
+  66.666% {
+    content: var(--emoji-2);
+  }
+}

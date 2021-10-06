@@ -1,0 +1,30 @@
+.ui.container.home-container {
+  margin-top: 5em;
+}
+
+.ui.vertical.segment.home-seg {
+  border-bottom: none;
+}
+@media (max-width: 768px) {
+  .ui.container.home-container {
+    margin-top: 2em;
+  }
+}
+
+.ui.segment.home-horny-segment {
+  margin-top: 14em;
+  padding: 3em;
+  box-shadow: 0.15em 0.15em 0.8em rgba(26, 49, 41, 0.3);
+  border-radius: 2.8571429rem 2.8571429rem 0 0;
+}
+
+@media (max-width: 768px) {
+  .ui.segment.home-horny-segment {
+    margin-top: 7em;
+    padding: initial;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    background: none;
+  }
+}

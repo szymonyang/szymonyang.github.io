@@ -1,0 +1,16 @@
+.pushable:not(body) {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
+.pushable:not(body) > .ui.sidebar,
+.pushable:not(body) > .fixed,
+.pushable:not(body) > .pusher:after {
+  position: fixed;
+}
+
+.small-wecheck {
+  /* width: 9em; */
+  height: 2em;
+}

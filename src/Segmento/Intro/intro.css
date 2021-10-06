@@ -1,0 +1,76 @@
+.intro-container {
+  position: relative;
+  text-align: center;
+  /* background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  color: white; */
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.intro-inner-container-flex {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#wig {
+  animation: slurp 1s steps(2, start) infinite;
+}
+
+@keyframes slurp {
+  to {
+    opacity: 0;
+  }
+}
+
+/* 
+.intro-text > h1 {
+  font-family: "Overlock", cursive;
+  font-style: italic;
+  font-size: 2.5em;
+  color: rgba(44, 51, 49, 0.8);
+  letter-spacing: 0.1em; 
+} */
+
+.electro-mobile {
+  max-width: 500px;
+  width: 100%;
+  /* https://stackoverflow.com/questions/43705866/max-width-not-working-on-flex-item */
+}
+
+span.emoji {
+  /* font-size: calc(100px + 4vw); */
+  display: inline-block;
+  color: initial;
+  font-style: initial;
+  min-width: 1.4em;
+  /* margin: 0.3em 0.4em; */
+  /* text-align: center; */
+}
+
+span.emoji::after {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+span.wave::after {
+  content: "✋";
+  --emoji: "👋";
+  animation-name: twoFrames;
+  animation-duration: 1s;
+}
+
+@keyframes twoFrames {
+  50% {
+    content: var(--emoji);
+  }
+}

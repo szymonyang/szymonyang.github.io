@@ -1,0 +1,22 @@
+/* * {
+} */
+
+h1 {
+  font-family: "Overlock", cursive;
+  font-style: italic;
+  /* font-weight: 600; */
+  font-size: 2.5rem;
+  color: rgba(13, 15, 15, 0.8);
+  /* letter-spacing: 0.1em; */
+}
+
+p {
+  color: rgba(44, 51, 49, 0.8);
+  font-size: 1.13rem;
+  letter-spacing: 0.005rem;
+}
+
+a.slurp {
+  text-decoration: underline;
+  font-style: italic;
+}
