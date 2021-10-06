@@ -1,21 +1,15 @@
-# Portfolio
+### Szymon's Portfolio
 
-Hey there, welcome mate!
+Built in 2018, and revisited in 2021 with a few things added:
 
-Just to say thank you to take a look at my portfolio, a place to track my progress.
+- [x] Rebuilt with React and Semantic UI
+- [x] Responsive
+- [x] x`Images transformed into svg
 
-### Roadmap
+Next steps:
 
-##### Todo
-
-- [x] Upload first draft
-- [x] Amend index page
-
-- [ ] Replace absolute position
-- [ ] Add `about` page
-- [ ] Add email sending in `contact` page
-- [ ] Add interactive scrolling
-
-### References
-
-- [particle.js](https://github.com/VincentGarreau/particles.js/) : A lightweight JavaScript library for creating particles.
+- UX/UI Re-design
+- Dark mode
+- A more sophisticated way to write CSS (considering tailwind)
+- Get rid of Semantic UI
+- Experiment on motion design
