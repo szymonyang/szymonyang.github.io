@@ -1,5 +1,6 @@
-/* * {
-} */
+* {
+  transition: 500ms all;
+}
 
 h1 {
   font-family: "Overlock", cursive;
